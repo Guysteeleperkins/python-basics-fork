@@ -63,3 +63,19 @@ opened_file = open(file_path)
 print(opened_file.read())
 opened_file.close()
 # print(opened_file.read())
+
+
+text_file_path = current_dir / TEXT_FILE_NAME
+
+with open(text_file_path) as text_file:
+    # Just iterates over all lines in the file
+    # Good for getting all data in one go
+    for line in text_file:
+        print(line.strip())
+        
+# Reads a single line and stops
+with open(text_file_path) as text_file:
+    line = text_file.readline()
+    while line:
+        print(line.strip())
+        line = text_file.readline()
