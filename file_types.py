@@ -87,5 +87,3 @@ with open(new_json_file_path) as read_json:
     data = json.load(read_json)
     print(data)
     print(type(data))
-
-#

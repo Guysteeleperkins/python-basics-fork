@@ -60,4 +60,5 @@ TEXT_FILE_NAME = "demo_files/data.txt"
 # # when the block of code is exited - no more reads allowed
 # # print(file.read())
 # opened_file = open(file_path)
-# print(opened_file.read())
+# print(opened_file.read()) 
+
